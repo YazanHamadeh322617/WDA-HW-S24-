@@ -1,0 +1,107 @@
+</html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="assets/img/MWS.png" type="image/x-icon">
+    <!-- import bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- import main style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Data Analysis Results</title>
+    <style>
+        p {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- start header  -->
+    <header id="home">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="text-capitalize">Data Analysis results</h1>
+                <button type="button" class="btn btn-outline-success">
+                    <a class="link-light" href="https://colab.research.google.com/drive/13dGEYSXvHYiSk3FI_pVRYUiWpnfHqTS7?usp=sharing"
+                        target="_blank"> Go To colab Jupyter notebook </a>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- end header  -->
+    <main>
+        <div class="container  my-3">
+            <div class="row">
+                <div class="col-md-6 my-3">
+                    <h2 class="text-center mb-4">الخطوات الأساسية  التي قمنا بها لتحليل البيانات:
+
+</h2>
+                    
+                </div>
+               
+                <div class="col-12 my-3">
+                   
+                    <ol>
+                        <li> تحميل ومعاينة البيانات: تم تحميل بيانات المبيعات من ملف CSV باستخدام مكتبة Pandas، وعُرضت أولى الصفوف للتحقق من اكتمال العملية بنجاح </li>
+                        <li> فحص وتنظيف البيانات: فُحصت القيم المفقودة في الأعمدة وتم استبدال الفراغات بصفر. كما جرى تحويل عمود "ORDERDATE" إلى صيغة تاريخية لضمان دقة البيانات</li>
+                        <li> تحليل المنتج: جُمعَت البيانات حسب رمز المنتج لحساب مؤشرات الأداء، بما في ذلك إجمالي الإيرادات، وعدد الوحدات المباعة، ومتوسط السعر للوحدة</li>
+						<li> تحليل شهري وسنوي: تم استخراج الشهر والسنة من عمود التاريخ وحُسبت مؤشرات الأداء لكل فترة زمنية، مما يسمح بمراقبة التغييرات والتوجهات بمرور الوقت.</li>
+                    </ol>
+                    <p> تَمّ رسم تغيرات المؤشرات الشهرية والسنوية باستخدام مكتبة Matplotlib، ما يتيح متابعة الاتجاهات الموسمية وفهم الأداء الزمني بوضوح.</p>
+                </div>
+                <div class="col-md-6 my-3">
+                    <h2 class="text-center mb-4">Total Revenue Over Time</h2>
+                    <img src="assets/img/pic1.png" class="w-100" />
+                </div>
+                <div class="col-md-6 my-3">
+                    <h2 class="text-center mb-4">Total Units Sold Over Time</h2>
+                    <img src="assets/img/pic2.png" class="w-100" />
+                </div>
+				<div class="col-md-6 my-3">
+                    <h2 class="text-center mb-4">Average Price Per Unit Over Time</h2>
+                    <img src="assets/img/pic3.png" class="w-100" />
+                </div>
+               
+                <div class="col-md-6 my-3">
+                    
+                </div>
+                <div class="col-md-6 my-3">
+                    <h2></h2>
+                    <p>  </p>
+                </div>
+                <div class="col-md-6 my-3">
+                    <h2 class="text-center mb-4">Top 5 Revenue Cities</h2>
+                    <img src="assets/img/image5.png" class="w-100" />
+                </div>
+                
+                <div class="col-12 my-3">
+                    <h2> يمكننا تقديم التوصيات بشكل عام للشركة بناءً على ماسبق: </h2>
+                    <ol>
+                        <li> . دراسة السوق: إجراء دراسة لمتطلبات السوق لفهم تفضيلات واحتياجات العملاء في المدن الأخرى. </li>
+                        <li> الإعلانات المستهدفة: تطوير حملات إعلانية مستهدفة مصممة خصيصًا للعملاء المحتملين في المدن ذات المبيعات المنخفضة </li>
+                        <li>توسيع التوزيع: زيادة توافر المنتجات في المدن ذات المبيعات المنخفضة من خلال الشراكات مع تجار التجزئة المحليين أو المنصات الإلكترونية </li>
+                        <li>إشراك العملاء: التفاعل مع العملاء في المدن ذات المبيعات المنخفضة من خلال العروض الترويجية أو الفعاليات لزيادة الوعي بالعلامة التجارية والولاء لها.
+                        </li>
+						<li>تنويع المنتجات: تقديم منتجات أو خدمات جديدة تلبِّي الاحتياجات والتفضيلات المحددة للعملاء في المدن ذات المبيعات المنخفضة.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- start footer  -->
+    <footer class="py-3">
+        <div class="container text-center">
+            <p class="text-center m-0">MWS-WDA-S24 &copy; Web Data Analysis 2024 - 2025</p>
+        </div>
+    </footer>
+    <!-- end footer  -->
+    <!-- import bootstrap js  -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
